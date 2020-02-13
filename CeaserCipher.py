@@ -1,5 +1,6 @@
 """ 一个凯撒密码的简单加密程序。给定一个句子，会按照加密方式加密，输出密文。"""
 
+
 my_alphabeta = "abcdefghijklmnopqrstuvwxyz"  # 自己定义一个字母表顺序表，不适用 ascii 码
 
 oringnal = text = input("input a sentencen 输入凯撒需要的明文：")  # 输入明文
