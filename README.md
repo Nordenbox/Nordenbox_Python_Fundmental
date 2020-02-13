@@ -1,2 +1,1 @@
-# Nordenbox_Python_Fundmental
- Fundermental
+About a fundermental issues of Python
