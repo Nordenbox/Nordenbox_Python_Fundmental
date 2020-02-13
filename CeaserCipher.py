@@ -3,16 +3,20 @@
 
 my_alphabeta = "abcdefghijklmnopqrstuvwxyz"  # 自己定义一个字母表顺序表，不适用 ascii 码
 
-oringnal = text = input("input a sentencen 输入凯撒需要的明文：")  # 输入明文
+oringnal = text = input("input a sentencen 输入凯撒需要的明文：").lower()  # 输入明文,并且改成小写字母。
 encoding_shift = int(input("input the encoding shift\n输入字符偏移量："))
 newtext = ""    # 建立一个空的字符串
 
-for s in range(0, len(text)):  # 变量s遍历每一个字符，长度为句子的长度，不包含标点符号。
+for s in range(0, len(text)):  # 变量s遍历每一个字符，长度为句子的长度，标点符号不算。
     # print(len(text))
     # print(text[s])
     if text[s] == " ":  # 遍历的字符遇到空格的情况，将空格保持不变。
         newtext = newtext + " "
-    else:
+    elif text[s] == ',':    # 遍历的字符遇到逗号的情况，将保持不变。
+        newtext = newtext + ','
+    elif text[s] == '.':    # # 遍历的字符遇到句号的情况，将保持不变。
+        newtext = newtext +'.'
+    else:    # 排除了以上情况之后 ……
         num = my_alphabeta.index(text[s]) + encoding_shift
         """ 将目前遍历到的字符s，检查其在我设定的字母顺序表的索引值，然后加上偏移量.
         给出一个新的索引值。给予变量 num。"""
