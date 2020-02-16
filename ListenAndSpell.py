@@ -9,9 +9,7 @@ file_path = (
     r"/Users/nordenbox/PycharmProjects/StudyProject/Speech_US"
 )  # read mp3 files from my file folder to ready pronunce
 file_list = []  # build a empty list to standby
-for i in os.listdir(
-    file_path
-):  # using os module to traverse the mp3 files in the certain path
+for i in os.listdir(file_path):  # using os module to traverse the mp3 files in the certain path
     file_list.append(os.path.join(file_path, i))  # creat a list of multipile mp3 paths
 random.shuffle(file_list)  # randoms the orders of list for repeatively use
 print("---------\n我们开始吧！\n--------------")
