@@ -64,7 +64,7 @@ if str.isdigit(passGiven) is True:
     while decoded_str != passGiven:
 
         decoded_str = generate_random_str_digital(pass_length)
-        print(decoded_str, end=",")
+        #print(decoded_str, end=",")
 
         loops = loops + 1
     else:
@@ -95,7 +95,7 @@ else:
         while decoded_str != passGiven:
 
             decoded_str = generate_random_str_lowcharacter(pass_length)
-            print(decoded_str, end=",")
+            #print(decoded_str, end=",")
 
             loops = loops + 1
         else:
@@ -126,7 +126,7 @@ else:
         while decoded_str != passGiven:
 
             decoded_str = generate_random_str_complicate(pass_length)
-            print(decoded_str, end=",")
+            #print(decoded_str, end=",")
 
             loops = loops + 1
         else:
