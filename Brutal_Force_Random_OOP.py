@@ -67,6 +67,6 @@ class BrutalForce_Decoding:
 
 pass_given = input("请输入您的密码，等待解码： ")
 use = BrutalForce_Decoding()
-random_str = use.dispatch_to_generat(pass_given)
-use.decoding_output(random_str)
+temp = use.dispatch_to_generat(pass_given)
+use.decoding_output(temp)
 
