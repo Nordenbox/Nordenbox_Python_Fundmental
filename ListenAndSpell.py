@@ -6,7 +6,7 @@ import subprocess
 
 
 file_path = (
-    r"/Users/nordenbox/PycharmProjects/StudyProject/Speech_US"
+    r"//Users/nordenbox/Documents/GitHub/NordenboxPython/Nordenbox_Python_Fundmental/Speech_US"
 )  # read mp3 files from my file folder to ready pronunce
 file_list = []  # build a empty list to standby
 for i in os.listdir(file_path):  # using os module to traverse the mp3 files in the certain path

@@ -1,14 +1,10 @@
 import random
 import time
 
-passGiven = input("pass:")
-pass_length = len(passGiven)
-
 
 def generate_random_str_complicate(pass_length):
-    """
-    生成一个指定长度的大小写字母数字随机字符串
-    """
+    '生成一个指定长度的大小写字母数字随机字符串'
+    
     random_str = ""
     base_str_complicate = (
         "ABCDEFGHIGKLMNOPQRSTUVWXYZabcdefghigklmnopqrstuvwxyz0123456789"
@@ -53,7 +49,8 @@ def generate_random_str_lowcharacter(pass_length):
 
 
 
-
+passGiven = input("pass:")
+pass_length = len(passGiven)
 
 decoded_str = ""
 loops = 0
