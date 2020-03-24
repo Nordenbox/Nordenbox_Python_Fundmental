@@ -22,6 +22,7 @@ class DiceThrow:
         print(res)
         les_array = np.array(res)
         print('每一行是一个骰子的所有掷出情况。\n', les_array)
+        print('ranks or axises of this array is ',les_array.ndim)
 
 
 numbers = int(input('how many dices do you want throw: '))
