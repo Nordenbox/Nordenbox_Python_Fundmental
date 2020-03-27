@@ -1,7 +1,7 @@
 import random
 import time
-
-
+import progressbar
+p = progressbar.ProgressBar()
 
 
 def findMin(L):  # find a minist element in a certain list
@@ -18,6 +18,7 @@ def my_sort(l):
         sorted_list.append(findMin(l))  # put the minist element into the empty list
         l.remove(findMin(l))  # remove above minist elemnt from original list
     return sorted_list
+
 
 a = [random.randint(1, 9999999) for i in range(1, 30000)]
 print(a, '\n*******************************')

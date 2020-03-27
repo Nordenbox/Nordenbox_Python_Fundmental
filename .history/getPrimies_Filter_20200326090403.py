@@ -1,4 +1,7 @@
 ''' utf-8'''
+import progressbar
+import time
+
 
 def find_primes(n):
     """[使用 Filter 函数筛选质数]
@@ -21,6 +24,6 @@ Returns:
 
 
 # filter函数，只要满足寻找素数的函数返回值为 False，就在列表中剔除。
-get_primes = filter(find_primes, [i for i in range(1, 30001)])
+get_primes = filter(find_primes, [i for i in range(1, 10001)])
 a = list(get_primes)
 print(a, len(a))

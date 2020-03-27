@@ -1,6 +1,6 @@
 import random
 import time
-
+import progressbar
 
 
 
@@ -19,7 +19,8 @@ def my_sort(l):
         l.remove(findMin(l))  # remove above minist elemnt from original list
     return sorted_list
 
-a = [random.randint(1, 9999999) for i in range(1, 30000)]
+p = progressbar.ProgressBar()
+a = [random.randint(1, 9999999) for i in p(range(1, 30000))]
 print(a, '\n*******************************')
 time_start = time.time()
 print(my_sort(a))
