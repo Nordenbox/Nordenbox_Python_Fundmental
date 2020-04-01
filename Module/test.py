@@ -1,2 +1,0 @@
-import csv
-dir(csv)
