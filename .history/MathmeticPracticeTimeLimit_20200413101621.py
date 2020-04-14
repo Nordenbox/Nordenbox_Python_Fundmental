@@ -22,6 +22,12 @@ def multipile_issues():
         count = count - 1
         print('还剩下{}道题'.format(count))
 
+    tuple_temp = practicese_issues()
+    corrected = tuple_iterator[0]
+    wrong = tuple_temp[1]
+    sum_wrong_list = tuple_temp[2]
+    minos_wrong_list = tuple_temp[3]
+
     print("正确为%d，错误为%d。" % (corrected, wrong),
           "你的分数是%d分" % (corrected / practicese_times * 100))
     if sum_wrong_list != [] and minos_wrong_list != []:

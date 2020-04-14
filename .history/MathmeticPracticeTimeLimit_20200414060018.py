@@ -13,7 +13,7 @@ def mode_choice():
 
         practice_multipile(practicese_times)
     else:
-        duration = float(input('请输入做题时间（分钟）： '))
+        duration = int(input('请输入做题时间（分钟）： '))
         practice_timelimit(duration)
 
 
@@ -25,14 +25,13 @@ def practice_timelimit(duration):
     time_start = time.time()
     print("--------------\n 开始计时……")
     count= 0
-    corrected = 0
-    wrong = 0
-    sum_wrong_list = []
-    minos_wrong_list = []
-    sum = 0
-    minos = 0
     while True:
-
+        corrected = 0
+        wrong = 0
+        sum_wrong_list = []
+        minos_wrong_list = []
+        sum = 0
+        minos = 0
 
 
         plus = random.randint(1, 20)
@@ -64,18 +63,14 @@ def practice_timelimit(duration):
 
         time_now = time.time()
         time_timelapse = time_now - time_start
-        time_remain = duration*60 - time_timelapse
+        time_remain = duration - time_timelapse
+        print(time_remain)
         count += 1
-        print('您的剩余时间为{}秒。已做了{}题。'.format(round(time_remain,1), count))
-
-
         if time_remain<=0:
-            print('您已经超时{}秒'.format(abs(round(time_remain,1))))
             break
 
 
     subprocess.call(["afplay", "/Users/nordenbox/Documents/GitHub/NordenboxPython/Nordenbox_Python_Fundmental/media/wfw311.mp3"])
-
     print("正确为%d，错误为%d。" % (corrected, wrong), "你的分数是%d分" % (corrected / count * 100))
     if sum_wrong_list != [] and minos_wrong_list != []:
         print("错误的题目是：\n", sum_wrong_list, "\n", minos_wrong_list)
@@ -99,6 +94,7 @@ def practice_multipile(times):
     minos = 0
 
     mathHouse = [random.randint(1, 20) for i in range(times)]
+    print(mathHouse)
     time_start = time.time()
     print("--------------\n 开始计时……")
 

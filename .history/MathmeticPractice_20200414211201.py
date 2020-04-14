@@ -75,7 +75,6 @@ def practice_timelimit(duration):
 
 
     subprocess.call(["afplay", "/Users/nordenbox/Documents/GitHub/NordenboxPython/Nordenbox_Python_Fundmental/media/wfw311.mp3"])
-
     print("正确为%d，错误为%d。" % (corrected, wrong), "你的分数是%d分" % (corrected / count * 100))
     if sum_wrong_list != [] and minos_wrong_list != []:
         print("错误的题目是：\n", sum_wrong_list, "\n", minos_wrong_list)
@@ -99,6 +98,7 @@ def practice_multipile(times):
     minos = 0
 
     mathHouse = [random.randint(1, 20) for i in range(times)]
+    print(mathHouse)
     time_start = time.time()
     print("--------------\n 开始计时……")
 
