@@ -4,7 +4,7 @@ import random
 boy = 0
 girl = 0
 second_boy = 0
-for i in range(1, 1000000):
+for i in range(1, 100000000000000):
     j = random.choice(['1', '0'])
     if j == '1':
         boy += 1
