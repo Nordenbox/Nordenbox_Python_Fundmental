@@ -16,3 +16,4 @@ print(sys.platform)
 # 显示当前Python解释器的版本信息。
 print(sys.version)
 # 返回当前Python解释器的主版本号。
+print(sys.darwinver)

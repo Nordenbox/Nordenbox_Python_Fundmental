@@ -13,7 +13,7 @@ import random
 import time
 
 
-items = input('输入列表包含多少元素 : ')
+items = input('输入包含多少元素 : ')
 given_items = int(items)
 given_list = [random.randint(1,100) for i in range(given_items) ]
 print('原始列表为： ', given_list)

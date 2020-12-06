@@ -13,11 +13,11 @@ import random
 import time
 
 
-items = input('输入列表包含多少元素 : ')
+items = input('输入包含多少元素 : ')
 given_items = int(items)
 given_list = [random.randint(1,100) for i in range(given_items) ]
 print('原始列表为： ', given_list)
-
+recall_list = given_list
 start_time = time.time()
 while sorted(given_list) != given_list:   # 检查这个随机生成的列表是否是良序。
                                           # 如果不是，就进入循环。大概率不是。
@@ -28,7 +28,7 @@ while sorted(given_list) != given_list:   # 检查这个随机生成的列表是
     print(given_list)
 end_time = time.time()
 print('---------------------')
-
+print(recall_list)
 print(given_list)
 print('消耗时间 = ', end_time-start_time, '秒')
 
