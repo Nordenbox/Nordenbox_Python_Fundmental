@@ -17,4 +17,4 @@ def fact(n):
         return 1
     else:
         return n * fact(n-1)
-print(fact(1398))
+print(fact(234))
