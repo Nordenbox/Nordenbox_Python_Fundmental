@@ -1,4 +1,3 @@
-import time
 import random
 
 
@@ -50,9 +49,7 @@ class BrutalForce_Decoding:
         else:
             self.generat_random_password_all(pass_length)
 
-        
-
-    def decoding_output(self,random_str):
+    def decoding_output(self, random_str):
         decoded_str = ""
 
         while decoded_str != pass_given:
@@ -69,4 +66,3 @@ pass_given = input("请输入您的密码，等待解码： ")
 use = BrutalForce_Decoding()
 temp = use.dispatch_to_generat(pass_given)
 use.decoding_output(temp)
-

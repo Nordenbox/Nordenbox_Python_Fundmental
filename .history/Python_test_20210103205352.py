@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 import random
 x = []
 y = []
-t = int(input('throw times: '))
-for i in range(t):
+s=0
+for i in range(10000):
     m = random.random()
     n = random.random()
     if m*m +n*n <=1:
@@ -12,9 +12,9 @@ for i in range(t):
         y.append(n)
     else:
         pass
-print(len(x),t)
+
 plt.scatter(x,y,alpha = 0.62)
-plt.title('Pi = {}'.format(4*len(x)/t))
+plt.title('Pi = {:.7}'.format(4*(len(x))/10000))
 plt.show()
 
 

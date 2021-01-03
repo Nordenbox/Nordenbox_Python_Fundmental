@@ -4,7 +4,7 @@ import random
 x = []
 y = []
 t = int(input('throw times: '))
-for i in range(t):
+for i in range(n):
     m = random.random()
     n = random.random()
     if m*m +n*n <=1:

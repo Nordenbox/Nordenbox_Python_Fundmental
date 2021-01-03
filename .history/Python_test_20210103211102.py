@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 import random
 x = []
 y = []
-t = int(input('throw times: '))
-for i in range(t):
+n = int(input('throw times: '))
+for i in range(n):
     m = random.random()
     n = random.random()
     if m*m +n*n <=1:
@@ -12,9 +12,9 @@ for i in range(t):
         y.append(n)
     else:
         pass
-print(len(x),t)
+print(len(x),n)
 plt.scatter(x,y,alpha = 0.62)
-plt.title('Pi = {}'.format(4*len(x)/t))
+plt.title('Pi = {}'.format(4*len(x)/n))
 plt.show()
 
 

@@ -1,4 +1,5 @@
-import numpy as np
+''' 这是一个用蒙特卡洛办法计算元圆周率的程序'''
+
 import matplotlib.pyplot as plt
 import random
 x = []

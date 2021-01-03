@@ -36,10 +36,12 @@ while a:    # 定义三阶幻方的每一个方格里的数字是 1-9 的随机�
 
     judge_list = [x1, x2, x3, y1, y2, y3, z1, z2, z3]    
     # 将列表生成，方便后面计算有误重复项。保证无数字重复。
+    '''
     print("%d+%d+%d=%d" % (x1, x2, x3, row1))
     print("%d+%d+%d=%d" % (y1, y2, y3, row2))
     print("%d+%d+%d=%d" % (z1, z2, z3, row3))
     print("------")
+    '''
     loops += 1
     if (
         row1 == 15
