@@ -2,7 +2,7 @@ import math
 a = 0
 sum = 0
 
-while a <= 10000:
+while a <= 10000000:
     a = a + 1
     sum = sum + (6/(a**2)) # 欧拉公式
     
