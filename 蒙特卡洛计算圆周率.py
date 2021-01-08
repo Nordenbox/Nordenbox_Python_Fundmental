@@ -7,7 +7,7 @@ from guppy import hpy  # 查看内存占用的库
 
 x = []  # 两个空列表备用
 y = []
-t = int(input('throw times: '))  # 选择投掷随机点的次数。
+t = int(input('throw times: '))  # 选择投掷随机点的次数。最好别超过十亿次，否则 32G 内存会爆掉。
 time_start = time.time()
 for i in range(t):  # for 循环模拟投掷
     m = random.random()  # 每个点的坐标都是 0 到 1 之间的随机小数
