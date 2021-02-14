@@ -19,7 +19,7 @@ for i in range(t):  # for 循环模拟投掷
         x.append(m)
         y.append(n)
         bar.numerator = i #进度条跟随迭代的数字
-        print(bar, end='') #打印进度条
+        print(i, end='') #打印进度条
         sys.stdout.flush()
     else:
         pass
