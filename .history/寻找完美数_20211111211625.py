@@ -14,7 +14,7 @@ def Judge(x):  # 写一个函数，判断一个数是不是完全数。
     else:
         False
 Perfect=[]
-for j in range(1,10000): # 在一个给定的范围里，逐一试试。
+for j in range(1,100000): # 在一个给定的范围里，逐一试试。
     if Judge(j)== True:
         Perfect.append(j)
 print(Perfect)
