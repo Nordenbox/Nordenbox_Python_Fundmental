@@ -8,5 +8,5 @@ def rev(s):
     print(temp)
 
 
-rev("123456789")
+rev("yequbiancheng")
 

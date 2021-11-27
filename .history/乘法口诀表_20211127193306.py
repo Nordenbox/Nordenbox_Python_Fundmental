@@ -1,3 +1,4 @@
+print('##########  九九乘法口诀  ############')
 def rev(s):
     temp = ''
     if s == "" or len(s) == 1:
@@ -8,5 +9,4 @@ def rev(s):
     print(temp)
 
 
-rev("123456789")
-
+rev("yequbiancheng")
